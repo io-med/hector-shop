@@ -1,2 +1,2 @@
- - [Design] (https://www.figma.com/design/Gb8LY0LRJcTXhO33NVsvw4/Hector--%3ETest-Day%3C--?node-id=253-228&node-type=frame&t=izjtXcysQgGh1Fy9-0)
- - [DEMO LINK](https://io.med.github.io/hector-shop/)
+ - [Design](https://www.figma.com/design/Gb8LY0LRJcTXhO33NVsvw4/Hector--%3ETest-Day%3C--?node-id=253-228&node-type=frame&t=izjtXcysQgGh1Fy9-0)
+ - [DEMO](https://io-med.github.io/hector-shop/)
