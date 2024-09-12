@@ -1,0 +1,19 @@
+.promo {
+  padding-top: 28px;
+  padding-bottom: 36px;
+  background-color: $bg-grey;
+
+  &__list {
+    @include list-reset;
+    grid-column: 1 / -1;
+
+    display: flex;
+    gap: 40px;
+  }
+
+  &__item {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+}

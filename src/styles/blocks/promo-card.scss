@@ -1,0 +1,47 @@
+.promo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 240px;
+  padding-left: 50%;
+  padding-right: 8px;
+
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: -5px 10px;
+
+  transition: background-size $transition 40ms;
+
+  &:hover {
+    background-size: 55%;
+  }
+
+  &__link {
+    @include hover-scale;
+    @include text-link;
+    @include text-bold;
+
+    display: block;
+  }
+
+  &__title {
+    margin:  0 0 14px;
+  }
+
+  &__description {
+    margin: 0;
+  }
+
+  &--man-red {
+    background-image: url("../images/man-red-S.png");
+  }
+
+  &--man-pink {
+    background-image: url("../images/man-pink-S.png");
+  }
+
+  &--man-black {
+    background-image: url("../images/man-black2-S.png");
+  }
+}

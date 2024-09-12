@@ -30,6 +30,12 @@
   margin: 0;
 }
 
+@mixin text-bold {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
 @mixin text-button {
   font-size: 18px;
   line-height: 22px;
@@ -44,6 +50,7 @@
 
 @mixin container {
   @include grid;
+
   max-width: 1920px;
   margin: 0 auto;
   padding-inline: 118px;
@@ -93,4 +100,12 @@
       transform: scaleX(1);
     }
   }
+}
+
+// resets
+
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
