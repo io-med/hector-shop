@@ -10,6 +10,12 @@
 @import 'blocks/pagination';
 @import 'blocks/promo';
 @import 'blocks/promo-card';
+@import 'blocks/catalog';
+@import 'blocks/tabs';
+@import 'blocks/products-list';
+@import 'blocks/product-card';
+@import 'blocks/rating';
+@import 'blocks/sizes';
 
 .page {
   &__body {
@@ -31,8 +37,11 @@
       content: 'Sorry, content is not optimized for your screen width, try making it wider.';
       visibility: visible;
       display: block;
+      width: 400px;
+      position: fixed;
+      inset: 50%;
+      transform: translate(-50%);
       text-align: center;
-      padding: 40px 20px;
     }
   }
 }

@@ -49,8 +49,6 @@
 }
 
 @mixin container {
-  @include grid;
-
   max-width: 1920px;
   margin: 0 auto;
   padding-inline: 118px;
@@ -63,6 +61,14 @@
 
   &:hover {
     transform: scale(1.1);
+  }
+}
+
+@mixin hover-scale--small {
+  transition: transform $transition linear 40ms;
+
+  &:hover {
+    transform: scale(1.06);
   }
 }
 
@@ -108,4 +114,9 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+@mixin button-reset {
+  background-color: transparent;
+  border: none;
 }

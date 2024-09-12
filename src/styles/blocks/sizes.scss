@@ -1,0 +1,11 @@
+.sizes {
+  display: flex;
+  gap: 2px;
+  &__size {
+    @include button-reset;
+
+    &--active {
+
+    }
+  }
+}

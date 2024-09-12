@@ -1,0 +1,18 @@
+.rating {
+  display: flex;
+  gap: 5px;
+
+  &__star {
+    width: 26px;
+    height: 24px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url("../images/logos/star-filled.svg");
+
+    &--empty {
+      background-image: url("../images/logos/star-empty.svg");
+    }
+  }
+}
