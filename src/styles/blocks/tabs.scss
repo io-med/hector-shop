@@ -4,6 +4,7 @@
 
   &__list {
     @include list-reset;
+
     position: relative;
 
     display: flex;
@@ -11,6 +12,14 @@
     height: 60px;
 
     border-bottom: 1px solid $main-black;
+  }
+
+  &__button {
+    @include button-reset;
+    @include text-button;
+
+    height: 100%;
+    color: $text-grey-darker;
   }
 
   &__item {
@@ -28,13 +37,5 @@
         line-height: 22px;
         color: $main-black;
       }
-  }
-
-  &__button {
-    @include button-reset;
-    @include text-button;
-
-    height: 100%;
-    color: $text-grey-darker;
   }
 }

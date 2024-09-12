@@ -1,4 +1,2 @@
-# Base layout template with Gulp, SCSS and Stylelint
-1. Create a repo using this template
-1. Replace `<your_account>` and `<repo_name>` with your Github username and the new repo name
-    - [DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+ - [Design] (https://www.figma.com/design/Gb8LY0LRJcTXhO33NVsvw4/Hector--%3ETest-Day%3C--?node-id=253-228&node-type=frame&t=izjtXcysQgGh1Fy9-0)
+ - [DEMO LINK](https://io.med.github.io/hector-shop/)

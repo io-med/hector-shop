@@ -64,7 +64,7 @@
   }
 }
 
-@mixin hover-scale--small {
+@mixin hover-scale-small {
   transition: transform $transition linear 40ms;
 
   &:hover {
