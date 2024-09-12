@@ -1,0 +1,43 @@
+.nav {
+  $gap: 26px;
+
+  &__list {
+    display: flex;
+    gap: $gap - ($menu-inline-padding * 2);
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__link {
+    @include text-link;
+    @include hover-underline;
+
+    display: block;
+    padding-inline: $menu-inline-padding;
+
+    letter-spacing: 1px;
+    white-space: nowrap;
+
+    &:first-child {
+      margin-left: -1 * $menu-inline-padding;
+    }
+
+    &--chevron {
+      &::after {
+        content: '';
+
+        display: inline-block;
+        width: 14px;
+        aspect-ratio: 1;
+
+        background-image: url("../images/logos/chevron.svg");
+
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+  }
+}

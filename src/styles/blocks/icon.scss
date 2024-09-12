@@ -1,0 +1,25 @@
+.icon {
+  display: block;
+  height: 22px;
+  aspect-ratio: 1;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  &--search {
+    background-image: url("../images/logos/search.svg");
+  }
+
+  &--heart {
+    background-image: url("../images/logos/heart.svg");
+  }
+
+  &--cart {
+    background-image: url("../images/logos/cart.svg");
+  }
+
+  &--contacts {
+    background-image: url("../images/logos/contacts.svg");
+  }
+}

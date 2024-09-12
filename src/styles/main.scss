@@ -1,3 +1,48 @@
-body {
-  margin: 0;
+@import 'utils/mixins';
+@import 'utils/variables';
+@import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/buttons-action';
+@import 'blocks/icon';
+@import 'blocks/top-bar';
+@import 'blocks/slider';
+@import 'blocks/button';
+@import 'blocks/pagination';
+
+.page {
+  &__body {
+    @include text-main;
+
+    margin: 0;
+  }
+
+  @media (max-width: 1800px) {
+    visibility: hidden;
+
+    &::before {
+      @include text-main;
+
+      content: 'Sorry, content is not optimized for your screen width, try making it wider.';
+      visibility: visible;
+      display: block;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  }
+}
+
+.visually-hidden {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+  outline: 0 !important;
+  outline-offset: 0 !important;
 }

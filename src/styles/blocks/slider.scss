@@ -1,0 +1,37 @@
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1044px;
+
+  // background-repeat: no-repeat, no-repeat;
+  // background-image: url("../images/man-black-XL.png"), url("../images/polygon.svg");
+  // background-size: 70%, 70%;
+  // background-position: 0 0, 0 0;
+
+  background-repeat: no-repeat, no-repeat;
+  background-image: url("../images/man-black-XL.png"), url("../images/polygon.svg");
+  background-size: auto, auto;
+  background-position: 85% 0, 85% 70px;
+
+  &__left {
+    width: 50%;
+  }
+
+  &__title {
+    @include text-title;
+
+    margin-bottom: 22px ;
+  }
+
+  &__subtitle {
+    @include text-subtitle;
+  
+    margin-bottom: 60px;
+  }
+
+  &__pagination {
+    margin-bottom: 82px;
+    align-self: flex-end;
+  }
+}

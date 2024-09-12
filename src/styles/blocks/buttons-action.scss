@@ -1,0 +1,15 @@
+.buttons-action {
+  &__list {
+    display: flex;
+    gap: 73px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+
+  &__item {
+    @include hover-scale;
+  }
+}

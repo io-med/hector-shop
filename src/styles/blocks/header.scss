@@ -1,0 +1,15 @@
+.header {
+  @include container;
+
+  padding-top: 58px;
+
+
+  &__top-bar {
+    grid-column: 1 / -1;
+  }
+
+  &__slider {
+    grid-column: 1 / -1;
+    margin-top: -70px;
+  }
+}

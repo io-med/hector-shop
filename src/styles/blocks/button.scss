@@ -1,0 +1,11 @@
+.button {
+  @include text-button;
+  @include hover-button;
+
+  padding: 25px 90px;
+  width: fit-content;
+
+  border: 1px solid $main-black;
+  outline: none;
+  background-color: transparent;
+}

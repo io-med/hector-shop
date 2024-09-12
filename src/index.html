@@ -1,13 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="page">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miami</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hector</title>
+    <link rel="stylesheet" href="./styles/main.scss" />
     <script src="scripts/main.js" defer></script>
+    <link
+      rel="shortcut icon"
+      href="./images/logos/favicon.jpg"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1>Landing Page</h1>
+  <body class="page__body">
+    <header class="header">
+      <div class="top-bar header__top-bar">
+        <nav class="nav top-bar__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#catalog" class="nav__link nav__link--chevron">
+                КАТАЛОГ
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link"> SALE </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link"> ОПТ </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link"> О НАС </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link"> ОТЗЫВЫ </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link"> ДОСТАВКА И ОПЛАТА </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link"> КОНТАКТЫ </a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="#" class="top-bar__logo">
+          <img src="./images/logos/logo-main.svg" alt="Hector logo" />
+        </a>
+
+        <div class="buttons-action top-bar__buttons-action">
+          <ul class="buttons-action__list">
+            <li class="buttons-action__item">
+              <a href="#" class="buttons-action__link icon icon--search"></a>
+            </li>
+
+            <li class="buttons-action__item">
+              <a href="#" class="buttons-action__link icon icon--heart"></a>
+            </li>
+
+            <li class="buttons-action__item">
+              <a href="#" class="buttons-action__link icon icon--cart"></a>
+            </li>
+
+            <li class="buttons-action__item">
+              <a href="#" class="buttons-action__link icon icon--contacts"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header__slider slider">
+        <div class="slider__left">
+          <div class="slider__text">
+            <p class="slider__title">МУЖСКАЯ<br />КОЛЛЕКЦИЯ</p>
+            <p class="slider__subtitle">
+              Распродажа коллекций со скидками до 50%, доставка до вашего склада
+            </p>
+          </div>
+
+          <button  class="slider__button button">
+            ПОДРОБНЕЕ
+          </button>
+        </div>
+        <div class="pagination slider__pagination">
+          <ul class="pagination__list">
+            <li class="pagination__list-item">
+              <a href="#" class="pagination__link">01</a>
+            </li>
+
+            <li class="pagination__list-item">
+              <a href="#" class="pagination__link pagination__link--active">02</a>
+            </li>
+
+            <li class="pagination__list-item">
+              <a href="#" class="pagination__link">03</a>
+            </li>
+
+            <li class="pagination__list-item">
+              <a href="#" class="pagination__link">04</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <h1 class="visually-hidden">Hector store</h1>
   </body>
 </html>

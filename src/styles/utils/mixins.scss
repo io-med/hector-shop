@@ -1,0 +1,96 @@
+// typography
+
+@mixin text-main {
+  font-family: Montserrat, Times, serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $main-black;
+}
+
+@mixin text-link {
+  @include text-main;
+
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+@mixin text-title {
+  font-size: 96px;
+  line-height: 96px;
+  font-weight: 900;
+  margin: 0;
+}
+
+@mixin text-subtitle {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+}
+
+@mixin text-button {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+// layout
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+@mixin container {
+  @include grid;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-inline: 118px;
+}
+
+// hovers and transitions
+
+@mixin hover-scale {
+  transition: transform $transition linear 40ms;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@mixin hover-button {
+  transition: box-shadow $transition linear 40ms;
+  box-shadow: 0 0 0 0 $main-black;
+
+  &:hover {
+    box-shadow: 7px 7px 0 0 $main-black;
+  }
+}
+
+@mixin hover-underline {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: $menu-inline-padding;
+    right: $menu-inline-padding;
+    bottom: -2px;
+    transform: scaleX(0);
+    transform-origin: left;
+
+    display: block;
+    height: 1px;
+
+    background-color: $main-black;
+
+    transition: transform $transition linear 40ms;
+  }
+
+  &:hover {
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+}

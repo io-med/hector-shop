@@ -1,0 +1,20 @@
+.top-bar {
+  @include grid;
+
+  &__nav {
+    grid-column: span 4;
+  }
+
+  &__logo {
+    @include hover-scale;
+
+    grid-column: 5;
+    justify-self: center;
+    margin-top: -26px;
+  }
+
+  &__buttons-action {
+    grid-column: -3 / -1;
+    justify-self: end;
+  }
+}
